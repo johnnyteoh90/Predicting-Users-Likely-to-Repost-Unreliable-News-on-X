@@ -1,85 +1,90 @@
 import pandas as pd
-import re
 
 # --- User settings -----------------------------------------
 
 # Path to your data (xlsx or csv)
-INPUT_PATH = 'fetched_data.xlsx'  # or 'fetched_data.csv'
+INPUT_PATH = 'fetched_data.xlsx'   # or 'fetched_data.csv'
 
 # Column names in your file
 USER_COL = 'user_id'
 TIME_COL = 'tweet_created_at'
-TEXT_COL = 'text'   # or wherever the tweet text lives
+TEXT_COL = 'tweet_text'   # or wherever the tweet text lives
 
-# (Optional) list of news‐source handles (lowercase, without @)
-NEWS_SOURCES = {
-    'cnn', 'bbcnews', 'nytimes', 'guardian',  # …etc.
-}
+# How many retweets to keep per user
+MAX_RTS = 20
 
 # Output files
-OUTPUT_CLEAN = 'filtered_tweets.csv'
-OUTPUT_ARCHIVE = 'first_reposts.csv'
+OUTPUT_KEPT    = 'filtered_kept_users.csv'
+OUTPUT_EXCL    = 'filtered_excluded_users.csv'
 
 # -----------------------------------------------------------
 
 # 1. Load data
-if INPUT_PATH.endswith('.xlsx'):
+if INPUT_PATH.lower().endswith('.xlsx'):
     df = pd.read_excel(INPUT_PATH)
 else:
     df = pd.read_csv(INPUT_PATH)
 
 # 2. Normalize types
 df[TIME_COL] = pd.to_datetime(df[TIME_COL])
-df[TEXT_COL] = df[TEXT_COL].astype(str)
+df[TEXT_COL]  = df[TEXT_COL].astype(str)
 
-# Helper: detect RT and extract the retweeted handle
-def extract_rt_handle(text):
-    m = re.match(r'RT @([A-Za-z0-9_]+):', text)
-    return m.group(1).lower() if m else None
+# 3. Identify retweets
+df['is_rt'] = df[TEXT_COL].str.startswith('RT @')
 
-df['rt_handle'] = df[TEXT_COL].apply(extract_rt_handle)
-df['is_rt'] = df['rt_handle'].notna()
+# 4. Sort by time so that cumcounts are chronological
+df = df.sort_values(TIME_COL)
 
-# 3. For each user: find first RT *of any* handle in NEWS_SOURCES
-first_rts = (
-    df[df['is_rt'] & df['rt_handle'].isin(NEWS_SOURCES)]
-      .sort_values(TIME_COL)
-      .groupby(USER_COL)
-      .first()
-      .reset_index()
-      .rename(columns={TIME_COL: 'first_rt_time'})
-      [[USER_COL, 'first_rt_time', 'rt_handle']]
+# 5. Extract only the RT tweets, rank them per user, and pick first MAX_RTS
+rt_only = df[df['is_rt']].copy()
+rt_only['rt_rank'] = rt_only.groupby(USER_COL).cumcount() + 1
+first_rts = rt_only[rt_only['rt_rank'] <= MAX_RTS]
+
+# 6. Compute cutoff per user = timestamp of their Nth retweet
+cutoff = first_rts.groupby(USER_COL)[TIME_COL] \
+                  .max() \
+                  .rename('cutoff_time')
+
+# 7. Merge cutoff into the full dataframe
+df = df.merge(cutoff, on=USER_COL, how='left')
+
+# 8. Bring rt_rank back into df (NaN for non-RT or RT beyond MAX_RTS)
+df = df.merge(
+    first_rts[[USER_COL, TIME_COL, 'rt_rank']],
+    on=[USER_COL, TIME_COL],
+    how='left'
 )
 
-# 4. Count original tweets before that time
-#    Merge to get each user’s first RT timestamp
-df = df.merge(first_rts[[USER_COL, 'first_rt_time']], on=USER_COL, how='left')
+# 9. Filter:
+#    - Keep RTs whose rank ≤ MAX_RTS
+#    - Keep originals (is_rt=False) with timestamp < cutoff_time
+cond_rt   = df['rt_rank'].between(1, MAX_RTS)
+cond_orig = (~df['is_rt']) & (df[TIME_COL] < df['cutoff_time'])
+filtered  = df[cond_rt | cond_orig].copy()
 
-#    Only users who ever RT’ed a news source
-df = df[~df['first_rt_time'].isna()].copy()
-
-#    Compute count of non‐RT tweets before first RT
-pre_rt = (
-    df[~df['is_rt'] & (df[TIME_COL] < df['first_rt_time'])]
+# 10. Count original tweets per user in the filtered set
+orig_counts = (
+    filtered[~filtered['is_rt']]
       .groupby(USER_COL)
       .size()
-      .rename('orig_before_rt')
+      .rename('orig_count')
 )
 
-first_rts = first_rts.set_index(USER_COL).join(pre_rt, how='left').fillna(0)
-first_rts['orig_before_rt'] = first_rts['orig_before_rt'].astype(int)
+# 11. Split users into kept (orig_count ≥ 10) and excluded (< 10)
+orig_counts = orig_counts.reset_index()
+kept_users  = orig_counts[orig_counts['orig_count'] >= 10][USER_COL]
+excl_users  = orig_counts[orig_counts['orig_count'] < 10][USER_COL]
 
-# 5. Filter users with ≥10 original tweets before first repost
-keep_users = first_rts[first_rts['orig_before_rt'] >= 10].index
+# 12. Build final DataFrames
+kept_df = filtered[filtered[USER_COL].isin(kept_users)].copy()
+excl_df = filtered[filtered[USER_COL].isin(excl_users)].copy()
 
-# Archive: all first reposts (including the handle they RT’ed)
-archive = first_rts.loc[keep_users].reset_index()
-archive.to_csv(OUTPUT_ARCHIVE, index=False)
+# 13. Sort by user and time
+kept_df = kept_df.sort_values([USER_COL, TIME_COL])
+excl_df = excl_df.sort_values([USER_COL, TIME_COL])
 
-# Cleaned dataset: keep only tweets by users in keep_users
-cleaned = df[df[USER_COL].isin(keep_users)].drop(columns=['first_rt_time'])
-cleaned.to_csv(OUTPUT_CLEAN, index=False)
-
-print(f"Kept {len(keep_users)} users; "
-      f"filtered dataset → {OUTPUT_CLEAN}; "
-      f"archive of first RTs → {OUTPUT_ARCHIVE}")
+# 14. Drop helper columns and save
+for df_out, path in [(kept_df, OUTPUT_KEPT), (excl_df, OUTPUT_EXCL)]:
+    df_out.drop(columns=['rt_rank', 'cutoff_time'], inplace=True)
+    df_out.to_csv(path, index=False)
+    print(f"Saved {len(df_out)} tweets → {path}")
