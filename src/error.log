@@ -1,0 +1,319 @@
+2025-07-17 15:11:58,177 ERROR:Unhandled exception in bert.py
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_utils.py", line 125, in preprocess_data_multiprocessing
+    examples = tokenizer(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\tokenization_utils_base.py", line 2577, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\tokenization_utils_base.py", line 2635, in _call_one
+    raise ValueError(
+ValueError: text input must of type `str` (single example), `List[str]` (batch or single pretokenized example) or `List[List[str]]` (batch of pretokenized examples).
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bert.py", line 105, in <module>
+    main()
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bert.py", line 91, in main
+    preds, _ = model.predict(test_df["text"].tolist())
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_model.py", line 2088, in predict
+    eval_dataset = self.load_and_cache_examples(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_model.py", line 1824, in load_and_cache_examples
+    dataset = ClassificationDataset(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_utils.py", line 282, in __init__
+    self.examples, self.labels = build_classification_dataset(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_utils.py", line 249, in build_classification_dataset
+    examples = list(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 873, in next
+    raise value
+ValueError: text input must of type `str` (single example), `List[str]` (batch or single pretokenized example) or `List[List[str]]` (batch of pretokenized examples).
+2025-07-17 15:28:33,165 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 99, in main
+    df["text"]  = df["text"].astype(str).map(preprocess)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'text'
+2025-07-17 15:42:39,373 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 107, in main
+    df["label"] = df["LABEL"].astype(int)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\managers.py", line 430, in astype
+    return self.apply(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\blocks.py", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 133, in _astype_nansafe
+    return arr.astype(dtype, copy=True)
+ValueError: invalid literal for int() with base 10: 'reliable'
+2025-07-17 15:46:03,027 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 130, in main
+    cmap, nclus   = load_cluster_map("glove-200-clusters.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 40, in load_cluster_map
+    with open(path, encoding="utf8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'glove-200-clusters.txt'
+2025-07-17 15:47:18,164 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 130, in main
+    cmap, nclus   = load_cluster_map("glove-200.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 42, in load_cluster_map
+    w, cid = line.rstrip().split()
+ValueError: too many values to unpack (expected 2)
+2025-07-17 15:50:12,376 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 154, in main
+    cmap, nclus = load_cluster_map("glove-200-clusters.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 46, in load_cluster_map
+    raise FileNotFoundError(f"Cluster file not found: {path}")
+FileNotFoundError: Cluster file not found: glove-200-clusters.txt
+2025-07-17 15:51:08,519 ERROR:Unhandled exception in svm_pipeline.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 154, in main
+    cmap, nclus = load_cluster_map("glove-200.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 52, in load_cluster_map
+    raise ValueError(
+ValueError: Line 1 in glove-200.txt malformed: expected 2 columns, got 3
+2025-07-17 21:21:51,602 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 51, in load_liwc
+    word, catstr = line.split("\t")
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 160, in main
+    liwc_map, liwc_cats = load_liwc("liwc2015.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 53, in load_liwc
+    raise ValueError(f"Line {lineno} malformed (need word<TAB>cats)")
+ValueError: Line 1 malformed (need word<TAB>cats)
+2025-07-17 21:29:42,120 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 173, in main
+    cmap, ncl = load_cluster_map("glove-200.txt")
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\svm.py", line 105, in load_cluster_map
+    raise FileNotFoundError(f"Cluster file not found: {path}")
+FileNotFoundError: Cluster file not found: glove-200.txt
+2025-07-17 22:45:36,598 ERROR:Unhandled exception in bert.py
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_utils.py", line 549, in convert_example_to_feature_sliding_window
+    tokens_a[i : i + bucket_size] for i in range(0, len(tokens_a), stride)
+TypeError: 'float' object cannot be interpreted as an integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bert.py", line 149, in <module>
+    main()
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bert.py", line 109, in main
+    model.train_model(train_df, eval_df=dev_df)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_model.py", line 617, in train_model
+    train_dataset = self.load_and_cache_examples(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_model.py", line 1735, in load_and_cache_examples
+    features = convert_examples_to_features(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\simpletransformers\classification\classification_utils.py", line 697, in convert_examples_to_features
+    features = list(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 423, in <genexpr>
+    return (item for chunk in result for item in chunk)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 873, in next
+    raise value
+TypeError: 'float' object cannot be interpreted as an integer
+2025-07-21 08:23:26,067 ERROR:Unhandled exception in bert_meta.py
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 56, in main
+    df['labels'] = df['label'].map({'reliable':0,'unreliable':1}).astype(int)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\generic.py", line 6643, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\managers.py", line 430, in astype
+    return self.apply(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\internals\blocks.py", line 758, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 101, in _astype_nansafe
+    return _astype_float_to_int_nansafe(arr, dtype, copy)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\dtypes\astype.py", line 145, in _astype_float_to_int_nansafe
+    raise IntCastingNaNError(
+pandas.errors.IntCastingNaNError: Cannot convert non-finite values (NA or inf) to integer
+2025-07-21 09:33:46,594 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'labels'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 97, in main
+    X = df.index.values; y = df['labels'].values
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'labels'
+2025-07-21 09:34:26,939 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'labels'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 97, in main
+    X = df.index.values; y = df['labels'].values
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'labels'
+2025-07-21 09:35:36,922 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 116, in main
+    training_args = TrainingArguments(
+  File "<string>", line 112, in __init__
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\training_args.py", line 1372, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\training_args.py", line 1795, in device
+    return self._setup_devices
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\training_args.py", line 1716, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+2025-07-21 09:40:21,787 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 140, in main
+    trainer.train()
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1752, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer_callback.py", line 353, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer_callback.py", line 397, in call_event
+    result = getattr(callback, event)(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\integrations.py", line 760, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\integrations.py", line 734, in setup
+    self._wandb.init(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_init.py", line 1620, in init
+    wandb._sentry.reraise(e)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\analytics\sentry.py", line 157, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_init.py", line 1548, in init
+    wi.maybe_login(init_settings)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_init.py", line 191, in maybe_login
+    wandb_login._login(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_login.py", line 315, in _login
+    key, key_status = wlogin.prompt_api_key(referrer=referrer)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_login.py", line 236, in prompt_api_key
+    key, status = self._prompt_api_key(referrer)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\wandb_login.py", line 212, in _prompt_api_key
+    key = apikey.prompt_api_key(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\wandb\sdk\lib\apikey.py", line 177, in prompt_api_key
+    key = input_callback(api_ask).strip()
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+2025-07-21 09:41:05,135 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 140, in main
+    trainer.train()
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1809, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 2654, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 2679, in compute_loss
+    outputs = model(**inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: BertWithMeta.forward() got an unexpected keyword argument 'labels'
+2025-07-21 09:52:50,992 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 173, in main
+    trainer.train()
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 1809, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 2654, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py", line 2679, in compute_loss
+    outputs = model(**inputs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 102, in forward
+    logits = self.classifier(x)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype, but got Double and Float
+2025-07-21 12:08:12,638 ERROR:Fatal
+Traceback (most recent call last):
+  File "C:\Users\peter\Desktop\MSc-Research-Project\src\bertv2.py", line 180, in main
+    print(f"Average Support (per class, approximate): {np.mean(all_support, axis=0)}")  # if multi-class support
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\numpy\core\fromnumeric.py", line 3504, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\numpy\core\_methods.py", line 118, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'

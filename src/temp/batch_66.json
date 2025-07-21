@@ -1,0 +1,1586 @@
+[
+  {
+    "public_metrics": {
+      "followers_count": 21247,
+      "following_count": 179,
+      "tweet_count": 75700,
+      "listed_count": 428,
+      "like_count": 366,
+      "media_count": 11222
+    },
+    "name": "News12BK",
+    "created_at": "2009-05-06T19:44:38.000Z",
+    "description": "24/7 Hyper-local breaking news, weather, traffic and more. Download our app or go to https://t.co/137gI2VoEu for updates. For news tips, call (718) 861-6800.",
+    "id": "38259234",
+    "verified_type": "none",
+    "username": "News12BK"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 38804,
+      "following_count": 30576,
+      "tweet_count": 181765,
+      "listed_count": 171,
+      "like_count": 86739,
+      "media_count": 20604
+    },
+    "name": "Paul Ruskov Benedict",
+    "created_at": "2009-06-11T03:28:07.000Z",
+    "description": "America is facing some of its darkest hours. May she birth greater liberty than ever through faith.",
+    "id": "46303458",
+    "verified_type": "blue",
+    "username": "paulbenedict7"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 8989838,
+      "following_count": 625,
+      "tweet_count": 443805,
+      "listed_count": 56140,
+      "like_count": 377,
+      "media_count": 198802
+    },
+    "name": "CBS News",
+    "created_at": "2008-06-05T00:54:31.000Z",
+    "description": "Your source for original reporting and trusted news.\n\n\ud83d\udcfa CBS | Streaming on the CBS News app | @ParamountPlus",
+    "id": "15012486",
+    "verified_type": "business",
+    "username": "CBSNews"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 9237,
+      "following_count": 1166,
+      "tweet_count": 4659,
+      "listed_count": 134,
+      "like_count": 4909,
+      "media_count": 925
+    },
+    "name": "Truvia",
+    "created_at": "2008-10-23T15:10:42.000Z",
+    "description": "Truvia sweetener is plant-based stevia sweetness born from the leaves of the stevia plant. #SweetnessRevolution",
+    "id": "16928203",
+    "verified_type": "none",
+    "username": "truvia"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 924,
+      "following_count": 448,
+      "tweet_count": 110744,
+      "listed_count": 23,
+      "like_count": 115369,
+      "media_count": 1181
+    },
+    "name": "Phe",
+    "created_at": "2014-03-04T20:26:52.000Z",
+    "description": "NYC.. serial entrepreneur . \ud83c\uddf9\ud83c\uddf9\ud83c\uddec\ud83c\udde9",
+    "id": "2372347440",
+    "verified_type": "none",
+    "username": "thepheshow"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1261295,
+      "following_count": 246,
+      "tweet_count": 117811,
+      "listed_count": 7563,
+      "like_count": 2104,
+      "media_count": 98213
+    },
+    "name": "AJ+",
+    "created_at": "2010-02-01T11:53:42.000Z",
+    "description": "AJ+ is a unique digital news and storytelling project promoting human rights and equality, holding power to account, and amplifying the voices of the powerless.",
+    "id": "110396781",
+    "verified_type": "business",
+    "username": "ajplus"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 91286,
+      "following_count": 410,
+      "tweet_count": 180344,
+      "listed_count": 868,
+      "like_count": 136,
+      "media_count": 3766
+    },
+    "name": "Grand Rapids Press",
+    "created_at": "2008-04-15T18:01:12.000Z",
+    "description": "The Grand Rapids Press, giving you local and statewide News, Business, Sports, Entertainment, Events and more",
+    "id": "14399160",
+    "verified_type": "blue",
+    "username": "GRPress"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 77161,
+      "following_count": 905,
+      "tweet_count": 10014,
+      "listed_count": 758,
+      "like_count": 2109,
+      "media_count": 222
+    },
+    "name": "Fernando Polo",
+    "created_at": "2010-09-26T23:01:06.000Z",
+    "description": "Periodista deportivo. En MD desde 1997. Secci\u00f3n Bar\u00e7a.",
+    "id": "195525290",
+    "verified_type": "none",
+    "username": "ffpolo"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 950370,
+      "following_count": 4515,
+      "tweet_count": 19735,
+      "listed_count": 7650,
+      "like_count": 4470,
+      "media_count": 4130
+    },
+    "name": "Ran Neuner",
+    "created_at": "2009-07-20T14:33:19.000Z",
+    "description": "CNBC Crypto Trader , Founder Crypto Banter. Invest in protocols that will change the world-give them enough time to do their thing. Tweets not financial advice.",
+    "id": "58487473",
+    "verified_type": "blue",
+    "username": "cryptomanran"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 707,
+      "following_count": 21,
+      "tweet_count": 12,
+      "listed_count": 7,
+      "like_count": 0,
+      "media_count": 0
+    },
+    "name": "Ktn",
+    "created_at": "2020-07-18T10:02:31.000Z",
+    "description": "Welcome Home.",
+    "id": "1284428244616450048",
+    "verified_type": "none",
+    "username": "KtnKenya"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 127477,
+      "following_count": 7368,
+      "tweet_count": 52648,
+      "listed_count": 787,
+      "like_count": 30369,
+      "media_count": 23007
+    },
+    "name": "PETA UK",
+    "created_at": "2011-08-18T16:01:32.000Z",
+    "description": "ANIMALS ARE NOT OURS to experiment on, eat, wear, use for entertainment or abuse in any other way. #EndSpeciesism",
+    "id": "357584312",
+    "verified_type": "blue",
+    "username": "PETAUK"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 146,
+      "following_count": 784,
+      "tweet_count": 1148,
+      "listed_count": 1,
+      "like_count": 34404,
+      "media_count": 20
+    },
+    "name": "lara\u2019s jeans",
+    "created_at": "2015-09-22T17:03:49.000Z",
+    "description": "",
+    "id": "3740714715",
+    "verified_type": "none",
+    "username": "kebaldewin"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 12845206,
+      "following_count": 39,
+      "tweet_count": 1708,
+      "listed_count": 21398,
+      "like_count": 1952,
+      "media_count": 424
+    },
+    "name": "Bill Clinton",
+    "created_at": "2013-04-06T01:47:40.000Z",
+    "description": "Husband, Father, Grandfather, 42nd President of the United States, Founder of @ClintonFdn, Author of CITIZEN \ud83c\uddfa\ud83c\uddf8",
+    "id": "1330457336",
+    "verified_type": "blue",
+    "username": "BillClinton"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 3492,
+      "following_count": 1943,
+      "tweet_count": 10268,
+      "listed_count": 115,
+      "like_count": 6723,
+      "media_count": 3078
+    },
+    "name": "BC Sports Hall of Fame",
+    "created_at": "2009-04-28T17:35:29.000Z",
+    "description": "\ud83c\udfc6 Honouring the past & inspiring the future! Celebrating BC's extraordinary sports achievements and athletic legends. #BCSportsHall #ExploreBC",
+    "id": "36126518",
+    "verified_type": "blue",
+    "username": "BCSportsHall"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 5101,
+      "following_count": 2134,
+      "tweet_count": 26745,
+      "listed_count": 49,
+      "like_count": 12801,
+      "media_count": 1171
+    },
+    "name": "Jack Mason",
+    "created_at": "2011-01-10T13:33:28.000Z",
+    "description": "BKK Fighters Head Coach\nCage Warriors Academy SE Owner\nShooters MMA Certified Coach",
+    "id": "236386762",
+    "verified_type": "blue",
+    "username": "JackStoneMason"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 102154,
+      "following_count": 4015,
+      "tweet_count": 12566,
+      "listed_count": 401,
+      "like_count": 5722,
+      "media_count": 3600
+    },
+    "name": "Boomi",
+    "created_at": "2008-05-28T15:51:02.000Z",
+    "description": "Boomi is the platform for intelligent connectivity and automation. Connect everyone to everything, anywhere. #TeamBoomi",
+    "id": "14934774",
+    "verified_type": "none",
+    "username": "boomi"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 630,
+      "following_count": 714,
+      "tweet_count": 1076,
+      "listed_count": 11,
+      "like_count": 4187,
+      "media_count": 293
+    },
+    "name": "Nelson Santizo",
+    "created_at": "2017-05-15T23:55:39.000Z",
+    "description": "Sergeant -Toronto Police Service | 31 Division | NCO | Account is not monitored 24/7, to report a crime call 416-808-2222 or 911 in an emergency.",
+    "id": "864268067295158272",
+    "verified_type": "none",
+    "username": "TpsNelson"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 653814,
+      "following_count": 3375,
+      "tweet_count": 80962,
+      "listed_count": 2629,
+      "like_count": 42697,
+      "media_count": 1927
+    },
+    "name": "Jess Phillips",
+    "created_at": "2009-02-03T20:24:44.000Z",
+    "description": "Labour MP for Birmingham Yardley",
+    "id": "20000725",
+    "verified_type": "government",
+    "username": "jessphillips"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 232701,
+      "following_count": 398,
+      "tweet_count": 6585,
+      "listed_count": 459,
+      "like_count": 39334,
+      "media_count": 930
+    },
+    "name": "\ud83d\udc51 Farrah Moan",
+    "created_at": "2016-09-28T00:47:04.000Z",
+    "description": "The Highlight of Season 9\nStreaming Tuesdays and Thursdays 4pm -7pm PST on Twitch\nBooking@FarrahMoan.com",
+    "id": "780931796502323201",
+    "verified_type": "none",
+    "username": "farrahrized"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 583,
+      "following_count": 953,
+      "tweet_count": 12820,
+      "listed_count": 6,
+      "like_count": 8583,
+      "media_count": 1874
+    },
+    "name": "Nena",
+    "created_at": "2013-03-10T15:28:24.000Z",
+    "description": "#Rheumatology #interrupter #SelfFund #employer #DPC #DSC #WISCONSIN #Latina Heroes: #MattOhrt #MarkCuban #MattieFeldman Opinions my own. Satire.",
+    "id": "1257289010",
+    "verified_type": "none",
+    "username": "Nenaadvocacy"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 60669,
+      "following_count": 934,
+      "tweet_count": 53067,
+      "listed_count": 303,
+      "like_count": 77680,
+      "media_count": 7024
+    },
+    "name": "David Jacobs",
+    "created_at": "2016-07-24T19:45:47.000Z",
+    "description": "Dad. Husband. Doctor. Chair, Ontario Association of Radiologists. Lt. Governor in Council Member, U of T GC.\ud83c\uddfa\ud83c\udde6\ud83c\uddee\ud83c\uddf1\ud83c\udde8\ud83c\udde6\n\nThe views expressed are my own.",
+    "id": "757300766478663680",
+    "verified_type": "blue",
+    "username": "DrJacobsRad"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 117658,
+      "following_count": 3117,
+      "tweet_count": 29820,
+      "listed_count": 43,
+      "like_count": 10810,
+      "media_count": 2542
+    },
+    "name": "Dingindaba Jonah Buyoya",
+    "created_at": "2012-04-25T10:27:22.000Z",
+    "description": "BBC News Komla Dumor Award Winner 22 \u2022 TV/Radio Host \u2022 Multi-award winning investigative Journalist \u2022 CITYZEN \u2022 For news leads: givebuyoyainfo@gmail.com",
+    "id": "562770913",
+    "verified_type": "blue",
+    "username": "BuyoyaJonah"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 2554,
+      "following_count": 2283,
+      "tweet_count": 78091,
+      "listed_count": 10,
+      "like_count": 135859,
+      "media_count": 1018
+    },
+    "name": "#FreeAssange .",
+    "created_at": "2017-12-07T01:30:07.000Z",
+    "description": "I despair of mankind. Tho I love it dearly . \nwe are entering a new age where the truth is harder and harder to find and the propaganda is Relentless .",
+    "id": "938581352533905408",
+    "verified_type": "none",
+    "username": "Banjomarla"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 3609,
+      "following_count": 2669,
+      "tweet_count": 5535,
+      "listed_count": 25,
+      "like_count": 11737,
+      "media_count": 756
+    },
+    "name": "Sanityfound",
+    "created_at": "2008-04-29T18:18:42.000Z",
+    "description": "\ud83c\uddff\ud83c\udde6 in \ud83c\uddfa\ud83c\uddf8 Seeking Sanity through all that life has to offer... travel, adventure & photography with a twist of laughter https://t.co/HoMe6kOv1c",
+    "id": "14588386",
+    "verified_type": "none",
+    "username": "sanityfound"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 7462435,
+      "following_count": 345,
+      "tweet_count": 260329,
+      "listed_count": 13307,
+      "like_count": 467,
+      "media_count": 49987
+    },
+    "name": "Estad\u00e3o \ud83d\uddde\ufe0f",
+    "created_at": "2007-10-08T22:08:22.000Z",
+    "description": "Siga \ud83d\udcf2\nhttps://t.co/pRX5FhPTmz\nhttps://t.co/ymYkjlmLoa\nhttps://t.co/lk7LrlF9vV\nhttps://t.co/EEbpgyjpQ9\nhttps://t.co/wGzrRdnXiC\nhttps://t.co/CVfXY9aZtd",
+    "id": "9317502",
+    "verified_type": "blue",
+    "username": "Estadao"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 59720,
+      "following_count": 1389,
+      "tweet_count": 10858,
+      "listed_count": 371,
+      "like_count": 4259,
+      "media_count": 1620
+    },
+    "name": "Jon Kay \u2615\ufe0f",
+    "created_at": "2009-02-01T20:29:36.000Z",
+    "description": "@BBCBreakfast @BBCNews @BBCRadio4 @BBCSounds #FairyMeadow podcast - link below. Insta: @jonkay01 Enquiries: https://t.co/2cvFBpJJbN",
+    "id": "19874960",
+    "verified_type": "none",
+    "username": "jonkay01"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 338840,
+      "following_count": 2171,
+      "tweet_count": 74303,
+      "listed_count": 0,
+      "like_count": 4884,
+      "media_count": 922
+    },
+    "name": "Hu Ping\u80e1\u5e73",
+    "created_at": "2010-03-01T22:16:33.000Z",
+    "description": "\u751f\u4e8e\u5317\u4eac\uff0c\u957f\u4e8e\u56db\u5ddd\uff0c\u73b0\u5c45\u7f8e\u56fd\u300266\u5e74\u9ad8\u4e2d\u6bd5\u4e1a\uff0c\u6587\u9769\u65f6\u5728\u81ea\u529e\u5c0f\u62a5\u8f6c\u8f7d\u9047\u7f57\u514b\u6587\u7ae0\uff1b69\u5e74\u4e0b\u4e61\u4e8e\u6500\u679d\u82b1\u5e02\u90ca\u533a\uff1b73\u5e74\u8fd4\u56de\u6210\u90fd\u300278\u5e74\u8003\u53d6\u5317\u5927\u897f\u65b9\u54f2\u5b66\u53f2\u7814\u7a76\u751f\u300279\u5e74\u6c11\u4e3b\u5899\u8fd0\u52a8\u4e2d\u53d1\u8868\u8bba\u8a00\u8bba\u81ea\u7531\u300280\u5e74\u53c2\u52a0\u7ade\u9009\uff0c\u5f53\u9009\u4e3a\u6d77\u6dc0\u533a\u4eba\u6c11\u4ee3\u8868\u300287\u5e74\u8d74\u7f8e\u3002\u66fe\u4efb\u4e2d\u56fd\u6c11\u8054\u4e3b\u5e2d\uff0888-91\uff09\uff0c\u5148\u540e\u4e3b\u6301\u4e2d\u56fd\u4e4b\u6625\u4e0e\u5317\u4eac\u4e4b\u6625\u6742\u5fd7\uff0c\u662f\u4e2d\u56fd\u4eba\u6743\u6267\u884c\u7406\u4e8b\u3002",
+    "id": "118838969",
+    "verified_type": "blue",
+    "username": "HuPing1"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1128215,
+      "following_count": 95,
+      "tweet_count": 22008,
+      "listed_count": 468,
+      "like_count": 447,
+      "media_count": 11526
+    },
+    "name": "Siddaramaiah",
+    "created_at": "2017-07-29T10:53:24.000Z",
+    "description": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1\u0cbf\u0c97 | Believer in equity & social justice | Family man | Chief Minister of Karnataka (2023- ,2013 - 2018)",
+    "id": "891250296512323585",
+    "verified_type": "blue",
+    "username": "siddaramaiah"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1339,
+      "following_count": 2411,
+      "tweet_count": 90613,
+      "listed_count": 15,
+      "like_count": 303,
+      "media_count": 4606
+    },
+    "name": "Ricardo Barinaga",
+    "created_at": "2013-03-26T14:11:52.000Z",
+    "description": "Solo m\u00e9dico, ciudadano y aficionado al f\u00fatbol. Esperando que el pa\u00eds cambie para bien.",
+    "id": "1304225720",
+    "verified_type": "none",
+    "username": "Baritono5"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 2512583,
+      "following_count": 606,
+      "tweet_count": 24839,
+      "listed_count": 4149,
+      "like_count": 13603,
+      "media_count": 2609
+    },
+    "name": "Kevin Sorbo",
+    "created_at": "2009-04-20T18:21:04.000Z",
+    "description": "Actor, director, producer, author.",
+    "id": "33608041",
+    "verified_type": "blue",
+    "username": "ksorbs"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 39921,
+      "following_count": 15873,
+      "tweet_count": 74537,
+      "listed_count": 426,
+      "like_count": 67077,
+      "media_count": 6585
+    },
+    "name": "Chris Boddy",
+    "created_at": "2011-07-29T14:53:07.000Z",
+    "description": "Retired Inspector at Toronto Police Service.",
+    "id": "344754757",
+    "verified_type": "none",
+    "username": "TPSChrisBoddy"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1849345,
+      "following_count": 3848,
+      "tweet_count": 55844,
+      "listed_count": 18989,
+      "like_count": 985,
+      "media_count": 2026
+    },
+    "name": "Nicholas Kristof",
+    "created_at": "2008-10-27T19:14:53.000Z",
+    "description": "NY Times columnist, author and farmer of cider apples and wine grapes @KristofFarms",
+    "id": "17004618",
+    "verified_type": "blue",
+    "username": "NickKristof"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 963982,
+      "following_count": 166,
+      "tweet_count": 3884,
+      "listed_count": 1459,
+      "like_count": 948,
+      "media_count": 886
+    },
+    "name": "Vic Fuentes",
+    "created_at": "2008-12-19T21:55:23.000Z",
+    "description": "I CAN\u2019T HEAR YOU.",
+    "id": "18253340",
+    "verified_type": "blue",
+    "username": "piercethevic"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 50651,
+      "following_count": 458,
+      "tweet_count": 2412,
+      "listed_count": 268,
+      "like_count": 614,
+      "media_count": 1372
+    },
+    "name": "2WAY",
+    "created_at": "2023-12-03T22:56:06.000Z",
+    "description": "Conversations Like No Other.",
+    "id": "1731447196455989248",
+    "verified_type": "blue",
+    "username": "2waytvapp"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 221105,
+      "following_count": 72805,
+      "tweet_count": 124,
+      "listed_count": 695,
+      "like_count": 15315,
+      "media_count": 4
+    },
+    "name": "Travis Allen",
+    "created_at": "2012-05-14T20:47:16.000Z",
+    "description": "cyber hooligan. information security engineer. blocked by trump, banned by elon. bourbon enjoyer \ud83e\udd43. vanderbilt grad. vikings/mavericks fan",
+    "id": "580224794",
+    "verified_type": "none",
+    "username": "TravisAllen02"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 2818,
+      "following_count": 58,
+      "tweet_count": 468,
+      "listed_count": 28,
+      "like_count": 396,
+      "media_count": 109
+    },
+    "name": "Milton Bradley",
+    "created_at": "2012-09-06T10:55:47.000Z",
+    "description": "aka ALIEN RAIN\naka Do Not Resist The Beat! I Doomsday Device I The End Of All Existence & more...",
+    "id": "806564269",
+    "verified_type": "none",
+    "username": "BerlinBradley"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 359,
+      "following_count": 706,
+      "tweet_count": 4687,
+      "listed_count": 5,
+      "like_count": 31419,
+      "media_count": 251
+    },
+    "name": "Chris Asbury",
+    "created_at": "2011-03-01T22:31:00.000Z",
+    "description": "California native. Proud Democrat. Dog lover. @warriors #TheResistance #Resist https://t.co/KysgCkLi3A",
+    "id": "259434986",
+    "verified_type": "none",
+    "username": "christineasbury"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 179,
+      "following_count": 18,
+      "tweet_count": 1,
+      "listed_count": 0,
+      "like_count": 0,
+      "media_count": 0
+    },
+    "name": "CM_Puducherry",
+    "created_at": "2016-06-21T16:25:27.000Z",
+    "description": "",
+    "id": "745291550385647616",
+    "verified_type": "none",
+    "username": "CMO_Puducherry"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 155391,
+      "following_count": 642,
+      "tweet_count": 8806,
+      "listed_count": 284,
+      "like_count": 9888,
+      "media_count": 1695
+    },
+    "name": "Nathan / Unspeakable",
+    "created_at": "2012-10-23T12:45:52.000Z",
+    "description": "Vlogger, Gamer. Website - https://t.co/bTdXZlUD1u Business - unspeakable@nightmedia.co",
+    "id": "899840029",
+    "verified_type": "none",
+    "username": "UnspeakableGame"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 153111,
+      "following_count": 819,
+      "tweet_count": 45808,
+      "listed_count": 1057,
+      "like_count": 15755,
+      "media_count": 2732
+    },
+    "name": "TechnicallyRon (On all the platforms)",
+    "created_at": "2010-01-25T00:18:06.000Z",
+    "description": "Writer etc",
+    "id": "108140114",
+    "verified_type": "none",
+    "username": "TechnicallyRon"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 467,
+      "following_count": 304,
+      "tweet_count": 16994,
+      "listed_count": 19,
+      "like_count": 2134,
+      "media_count": 0
+    },
+    "name": "himawari",
+    "created_at": "2011-06-20T15:28:00.000Z",
+    "description": "Live your own life, for you will die your own death",
+    "id": "320810154",
+    "verified_type": "none",
+    "username": "drsunflower"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 311184,
+      "following_count": 1955,
+      "tweet_count": 14314,
+      "listed_count": 4005,
+      "like_count": 72355,
+      "media_count": 1657
+    },
+    "name": "\ud83c\uddfa\ud83c\uddf8 Kyle Bass \ud83c\uddf9\ud83c\uddfc",
+    "created_at": "2015-02-01T03:15:42.000Z",
+    "description": "Environmentalist and CIO Hayman Capital Management \ud83c\uddfa\ud83c\uddf8Happy to Block ccp Twitter bots, Fan of Democracy, Rule of Law, and National Security. Life Member CFR",
+    "id": "3005733012",
+    "verified_type": "blue",
+    "username": "Jkylebass"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 370917,
+      "following_count": 1184,
+      "tweet_count": 567918,
+      "listed_count": 2055,
+      "like_count": 3281,
+      "media_count": 88267
+    },
+    "name": "FOX 10 Phoenix",
+    "created_at": "2009-01-14T22:29:11.000Z",
+    "description": "Phoenix breaking news, weather, politics, sports, traffic, and more.",
+    "id": "18999261",
+    "verified_type": "blue",
+    "username": "FOX10Phoenix"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 566352,
+      "following_count": 115359,
+      "tweet_count": 31177,
+      "listed_count": 1212,
+      "like_count": 32224,
+      "media_count": 8312
+    },
+    "name": "The Trump Train \ud83d\ude82\ud83c\uddfa\ud83c\uddf8",
+    "created_at": "2015-11-03T05:07:18.000Z",
+    "description": "Welcome to the #TrumpTrain, the greatest political movement in history. RT'd by @realDonaldTrump. #Trump fan account that is VERY #MAGA \ud83c\uddfa\ud83c\uddf8\ud83e\udd85 #America First\u261d\ud83c\udffc",
+    "id": "4102376488",
+    "verified_type": "none",
+    "username": "The_Trump_Train"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 14414,
+      "following_count": 127,
+      "tweet_count": 1208,
+      "listed_count": 33,
+      "like_count": 2170,
+      "media_count": 388
+    },
+    "name": "KHK MMA",
+    "created_at": "2015-04-02T11:11:07.000Z",
+    "description": "KHK MMA was found with the sole mission of enhancing MMA as a sport by building a concrete foundation in the Middle East to evolve the MMA world.",
+    "id": "3129953784",
+    "verified_type": "none",
+    "username": "KHK_MMA"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 46,
+      "following_count": 204,
+      "tweet_count": 112,
+      "listed_count": 0,
+      "like_count": 671,
+      "media_count": 0
+    },
+    "name": "404 Not Found",
+    "created_at": "2018-02-15T17:16:04.000Z",
+    "description": "Tech, sports, travel. Marketing, operations, automation. Guru-free zone, I promise.",
+    "id": "964186558894149633",
+    "verified_type": "none",
+    "username": "nelsthethird"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 2243039,
+      "following_count": 168,
+      "tweet_count": 96076,
+      "listed_count": 6632,
+      "like_count": 2710,
+      "media_count": 49626
+    },
+    "name": "Tasty",
+    "created_at": "2015-10-23T00:29:41.000Z",
+    "description": "If you like our recipe videos, you\u2019ll love our A.I. Chefbot, Botatouille. Pull up a seat at our table and let us help you figure out dinner\u2014download our app!",
+    "id": "4020532937",
+    "verified_type": "business",
+    "username": "tasty"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1818365,
+      "following_count": 1165,
+      "tweet_count": 38174,
+      "listed_count": 8523,
+      "like_count": 1703,
+      "media_count": 15801
+    },
+    "name": "U.S. Navy",
+    "created_at": "2009-07-08T12:51:11.000Z",
+    "description": "Official X account of the #USNavy. Celebrating 250 years of service, strength and sea power. (Following, reposts and links \u2260 endorsement)",
+    "id": "54885400",
+    "verified_type": "government",
+    "username": "USNavy"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 483771,
+      "following_count": 97,
+      "tweet_count": 41019,
+      "listed_count": 411,
+      "like_count": 15349,
+      "media_count": 4490
+    },
+    "name": "Ajeet Bharti",
+    "created_at": "2010-05-27T13:31:40.000Z",
+    "description": "Journalist | Author (\u092c\u0915\u0930 \u092a\u0941\u0930\u093e\u0923, \u0918\u0930\u0935\u093e\u092a\u0938\u0940, There Will Be No Love, \u091c\u094b \u092d\u0940 \u0915\u0939\u0942\u0901\u0917\u093e \u0938\u091a \u0915\u0939\u0942\u0901\u0917\u093e) To Buy: https://t.co/nDEZ5fe2dy",
+    "id": "148735394",
+    "verified_type": "blue",
+    "username": "ajeetbharti"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 67228,
+      "following_count": 1447,
+      "tweet_count": 60210,
+      "listed_count": 1717,
+      "like_count": 7675,
+      "media_count": 4570
+    },
+    "name": "Small Wars Journal",
+    "created_at": "2009-03-17T21:45:38.000Z",
+    "description": "SWJ Community of Interest & Practice - Irregular Warfare & Related Issues, National Defense & Foreign Policy. RT/Like \u2260 Endorsement.",
+    "id": "24961826",
+    "verified_type": "blue",
+    "username": "smallwars"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 68817,
+      "following_count": 2993,
+      "tweet_count": 37405,
+      "listed_count": 2386,
+      "like_count": 2,
+      "media_count": 2822
+    },
+    "name": "Michael Calderone",
+    "created_at": "2009-08-05T02:23:01.000Z",
+    "description": "Editor, @VanityFair\u2019s The Hive. Covered media/politics at @Politico, @HuffPost; taught journalism at @Princeton, @nyuniversity.",
+    "id": "63004503",
+    "verified_type": "none",
+    "username": "mlcalderone"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 121790,
+      "following_count": 10939,
+      "tweet_count": 6232,
+      "listed_count": 1504,
+      "like_count": 6792,
+      "media_count": 3077
+    },
+    "name": "fabric",
+    "created_at": "2008-04-22T15:41:03.000Z",
+    "description": "#fabricOriginals & @HoundstoothLBL",
+    "id": "14476084",
+    "verified_type": "blue",
+    "username": "fabriclondon"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 60343,
+      "following_count": 14782,
+      "tweet_count": 147423,
+      "listed_count": 118,
+      "like_count": 116739,
+      "media_count": 7192
+    },
+    "name": "True Hindusthani (Modi Ka Parivar)\ud83c\uddee\ud83c\uddf3",
+    "created_at": "2009-07-20T16:29:08.000Z",
+    "description": "IT Consultant | Here for Political Topics | #NaMo | Mission Super Power India | Development of all | This Globe is one Family",
+    "id": "58516766",
+    "verified_type": "none",
+    "username": "ani30oct"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 244095,
+      "following_count": 1160,
+      "tweet_count": 128687,
+      "listed_count": 2853,
+      "like_count": 17972,
+      "media_count": 33137
+    },
+    "name": "Catholic News Service Rome",
+    "created_at": "2008-11-03T18:38:01.000Z",
+    "description": "Catholic News Service has been providing complete, in-depth coverage of the popes and the Vatican for more than 70 years.",
+    "id": "17136419",
+    "verified_type": "none",
+    "username": "CatholicNewsSvc"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 7631,
+      "following_count": 1334,
+      "tweet_count": 41567,
+      "listed_count": 259,
+      "like_count": 8135,
+      "media_count": 3846
+    },
+    "name": "Tom Noie",
+    "created_at": "2009-04-06T14:17:23.000Z",
+    "description": "Working on mysteries without any clues while covering just about everything, particularly Notre Dame men's hoops, for the South Bend Tribune since 1992.",
+    "id": "29207621",
+    "verified_type": "none",
+    "username": "tnoieNDI"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 55851,
+      "following_count": 874,
+      "tweet_count": 14469,
+      "listed_count": 844,
+      "like_count": 16178,
+      "media_count": 1526
+    },
+    "name": "Ming Tsai",
+    "created_at": "2011-03-25T18:48:48.000Z",
+    "description": "Founder MingsBings, Chef/Partner BaBa, Emmy Award Winner-Simply Ming, Chair National Advisory Board Family Reach https://t.co/bOazboFgsz",
+    "id": "272059169",
+    "verified_type": "none",
+    "username": "mingtsai"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 4021577,
+      "following_count": 7128,
+      "tweet_count": 267290,
+      "listed_count": 16742,
+      "like_count": 10617,
+      "media_count": 101941
+    },
+    "name": "TODAY",
+    "created_at": "2007-07-26T19:56:22.000Z",
+    "description": "Your day starts here. \u2600\ufe0f",
+    "id": "7744592",
+    "verified_type": "business",
+    "username": "TODAYshow"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 59052,
+      "following_count": 2604,
+      "tweet_count": 10476,
+      "listed_count": 23,
+      "like_count": 1740,
+      "media_count": 614
+    },
+    "name": "STEPHEN LETOO",
+    "created_at": "2012-02-13T12:43:32.000Z",
+    "description": "OFFICIAL TWITTER ACCOUNT TO @SteveLetoo MAA AWARD WINNING JOURNALIST, Senior Political Affairs Journalist @citizentvkenya , Husband and Father",
+    "id": "491257646",
+    "verified_type": "none",
+    "username": "SteveLetoo"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 76295,
+      "following_count": 35756,
+      "tweet_count": 67523,
+      "listed_count": 111,
+      "like_count": 6549,
+      "media_count": 2103
+    },
+    "name": "Dr. Elias Munshya",
+    "created_at": "2009-11-13T00:56:10.000Z",
+    "description": "Zambia\u2019s High Commissioner to Australia, New Zealand, & the South Pacific. Ph.D., MBA, LL.M, M.DIV., MA., MA (Counselling), BA, LLB (Honours)",
+    "id": "89587885",
+    "verified_type": "blue",
+    "username": "eliasmunshya"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 540793,
+      "following_count": 912,
+      "tweet_count": 175851,
+      "listed_count": 4107,
+      "like_count": 357,
+      "media_count": 41996
+    },
+    "name": "SBS News",
+    "created_at": "2007-08-15T06:40:45.000Z",
+    "description": "Bringing you the national \ud83c\udde6\ud83c\uddfa and global \ud83c\udf0f news that matters. See website for T&C and privacy policy.",
+    "id": "8197942",
+    "verified_type": "none",
+    "username": "SBSNews"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 0,
+      "following_count": 0,
+      "tweet_count": 0,
+      "listed_count": 0,
+      "like_count": 0,
+      "media_count": 0
+    },
+    "name": "Foreign Office",
+    "created_at": "2020-09-01T21:45:17.000Z",
+    "description": "",
+    "id": "1300912573739663361",
+    "verified_type": "none",
+    "username": "foreignoffice"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 3271,
+      "following_count": 3338,
+      "tweet_count": 73243,
+      "listed_count": 31,
+      "like_count": 168404,
+      "media_count": 4297
+    },
+    "name": "Rajniiiii patil",
+    "created_at": "2013-07-14T13:47:36.000Z",
+    "description": "Engineer &\nProud Indian \ud83e\udd17\ud83c\udf1a\ud83d\ude0e\ud83d\ude07\ud83d\udc9c\ud83d\udc99",
+    "id": "1593447895",
+    "verified_type": "none",
+    "username": "indian_patil"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 106236,
+      "following_count": 1340,
+      "tweet_count": 115884,
+      "listed_count": 1808,
+      "like_count": 3286,
+      "media_count": 5705
+    },
+    "name": "Financial News",
+    "created_at": "2009-01-28T09:33:58.000Z",
+    "description": "Financial News's award-winning team of journalists sets the agenda for the City. Stay in the loop: click here for our newsletters https://t.co/Fm2sDje73g",
+    "id": "19643448",
+    "verified_type": "none",
+    "username": "FinancialNews"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 17,
+      "following_count": 174,
+      "tweet_count": 33,
+      "listed_count": 0,
+      "like_count": 195,
+      "media_count": 5
+    },
+    "name": "Mukesh thakur",
+    "created_at": "2019-03-03T10:18:20.000Z",
+    "description": "\u0920\u093e\u0915\u0941\u0930",
+    "id": "1102151209782308864",
+    "verified_type": "none",
+    "username": "mukesh_thakur"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 229064,
+      "following_count": 11607,
+      "tweet_count": 14060,
+      "listed_count": 5019,
+      "like_count": 15612,
+      "media_count": 2995
+    },
+    "name": "Stone Brewing",
+    "created_at": "2008-09-17T16:00:11.000Z",
+    "description": "We like hops. (Must be legal drinking age to follow.)",
+    "id": "16331259",
+    "verified_type": "none",
+    "username": "StoneBrewing"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 2789,
+      "following_count": 1959,
+      "tweet_count": 12011,
+      "listed_count": 13,
+      "like_count": 17249,
+      "media_count": 467
+    },
+    "name": "OrdinaryAmericanGirl",
+    "created_at": "2015-09-21T22:19:02.000Z",
+    "description": "Recovering ex-democrat. Free speech addict. floating in space. #MAGA #MAHA",
+    "id": "3642163754",
+    "verified_type": "blue",
+    "username": "OAmericanGirl"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 165923,
+      "following_count": 812,
+      "tweet_count": 125493,
+      "listed_count": 716,
+      "like_count": 33508,
+      "media_count": 3468
+    },
+    "name": "McDonald's \ud83c\udde8\ud83c\udde6",
+    "created_at": "2009-10-19T21:17:02.000Z",
+    "description": "u might call it a heist, i call it bringing Canada what it needs",
+    "id": "83691020",
+    "verified_type": "business",
+    "username": "McDonaldsCanada"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 324,
+      "following_count": 760,
+      "tweet_count": 25684,
+      "listed_count": 0,
+      "like_count": 204764,
+      "media_count": 788
+    },
+    "name": "Chippy",
+    "created_at": "2017-09-06T20:56:52.000Z",
+    "description": "Go 'Bos, Roll Tide",
+    "id": "905535290944708608",
+    "verified_type": "none",
+    "username": "I_WantChips"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 132,
+      "following_count": 485,
+      "tweet_count": 16307,
+      "listed_count": 2,
+      "like_count": 19399,
+      "media_count": 825
+    },
+    "name": "Miguel Enguidanos",
+    "created_at": "2013-09-09T20:04:58.000Z",
+    "description": "I'm a sucker for click bait. Architect",
+    "id": "1849291112",
+    "verified_type": "none",
+    "username": "Miguele3Miguel"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1238,
+      "following_count": 294,
+      "tweet_count": 10694,
+      "listed_count": 9,
+      "like_count": 39629,
+      "media_count": 1454
+    },
+    "name": "CH\u00c9",
+    "created_at": "2022-03-05T08:31:12.000Z",
+    "description": "v2",
+    "id": "1500026069214240779",
+    "verified_type": "none",
+    "username": "1Nokhchuo"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 527534,
+      "following_count": 302,
+      "tweet_count": 13315,
+      "listed_count": 3592,
+      "like_count": 1468,
+      "media_count": 5334
+    },
+    "name": "Pod Save America",
+    "created_at": "2017-01-05T04:51:06.000Z",
+    "description": "A no-bullshit conversation about politics with hosts @jonfavs @danpfeiffer @tvietor08 & @jonlovett.",
+    "id": "816869611480186880",
+    "verified_type": "blue",
+    "username": "PodSaveAmerica"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 852,
+      "following_count": 1227,
+      "tweet_count": 6986,
+      "listed_count": 13,
+      "like_count": 64003,
+      "media_count": 484
+    },
+    "name": "Joseph Galazzo",
+    "created_at": "2012-11-21T12:53:42.000Z",
+    "description": "the loser you once sucked out on",
+    "id": "962341452",
+    "verified_type": "none",
+    "username": "JOEYdaMUSH"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 253039,
+      "following_count": 151,
+      "tweet_count": 13493,
+      "listed_count": 1550,
+      "like_count": 347931,
+      "media_count": 1009
+    },
+    "name": "Andrea Junker",
+    "created_at": "2013-09-15T08:50:57.000Z",
+    "description": "Nomad since 1998: Home isn\u2019t a place, it\u2019s a feeling. Following the roots of my German grandmother. Mover: Strong and persistent voice against Trumpism.",
+    "id": "1866938882",
+    "verified_type": "blue",
+    "username": "Strandjunker"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 262901,
+      "following_count": 145,
+      "tweet_count": 17287,
+      "listed_count": 2565,
+      "like_count": 9062,
+      "media_count": 5412
+    },
+    "name": "Bjorn Lomborg",
+    "created_at": "2009-12-10T10:04:52.000Z",
+    "description": "Author of 'Best Things First', 'False Alarm', and 'Skeptical Environmentalist', President Copenhagen Consensus: smart solutions through economic prioritization",
+    "id": "95869752",
+    "verified_type": "blue",
+    "username": "BjornLomborg"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 23383,
+      "following_count": 21089,
+      "tweet_count": 23574,
+      "listed_count": 338,
+      "like_count": 2881,
+      "media_count": 1387
+    },
+    "name": "Chris Choi",
+    "created_at": "2010-06-22T09:30:25.000Z",
+    "description": "news, documentaries, investigations and consumer TV. Ex \u201cWatchdog\u201d and Radio 4, now ITV.",
+    "id": "158305164",
+    "verified_type": "none",
+    "username": "Chrisitv"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 22978,
+      "following_count": 5133,
+      "tweet_count": 262333,
+      "listed_count": 4,
+      "like_count": 184448,
+      "media_count": 2063
+    },
+    "name": "Konki\u2122",
+    "created_at": "2022-08-12T07:00:13.000Z",
+    "description": "Happy facade\ud83d\udcaf GGMU\ud83d\udcaa #DubNation\npicses\u2653 Allergic to counterfeit ,Poet. E football gamer, Zoologist",
+    "id": "1557985159974117380",
+    "verified_type": "none",
+    "username": "_lethal01"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 24,
+      "following_count": 104,
+      "tweet_count": 352,
+      "listed_count": 0,
+      "like_count": 16,
+      "media_count": 118
+    },
+    "name": "Foriver",
+    "created_at": "2009-07-03T14:04:31.000Z",
+    "description": "",
+    "id": "53392622",
+    "verified_type": "none",
+    "username": "WaldenRiver"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 296030,
+      "following_count": 786,
+      "tweet_count": 40729,
+      "listed_count": 3839,
+      "like_count": 4018,
+      "media_count": 21112
+    },
+    "name": "Universe Today",
+    "created_at": "2009-03-13T04:44:22.000Z",
+    "description": "Universe Today - https://t.co/pIjWdm9tWM, a website about space and astronomy.  Story feed moved to: https://t.co/3evgDq0mxi",
+    "id": "24129206",
+    "verified_type": "none",
+    "username": "universetoday"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 36421,
+      "following_count": 677,
+      "tweet_count": 1990,
+      "listed_count": 713,
+      "like_count": 2797,
+      "media_count": 420
+    },
+    "name": "Gary Tuchman",
+    "created_at": "2010-01-13T10:43:36.000Z",
+    "description": "CNN National Correspondent",
+    "id": "104446737",
+    "verified_type": "none",
+    "username": "GaryTuchmanCNN"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 40540029,
+      "following_count": 287,
+      "tweet_count": 13616,
+      "listed_count": 77192,
+      "like_count": 267,
+      "media_count": 1000
+    },
+    "name": "Oprah Winfrey",
+    "created_at": "2009-01-23T15:18:34.000Z",
+    "description": "",
+    "id": "19397785",
+    "verified_type": "blue",
+    "username": "Oprah"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 630,
+      "following_count": 859,
+      "tweet_count": 3644,
+      "listed_count": 0,
+      "like_count": 1547,
+      "media_count": 573
+    },
+    "name": "Mr_C",
+    "created_at": "2011-12-10T05:04:25.000Z",
+    "description": "Cuando todos hu\u00edan de ah\u00ed, yo corr\u00eda hacia all\u00e1.",
+    "id": "433118341",
+    "verified_type": "none",
+    "username": "SinAsignar"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 4964,
+      "following_count": 528,
+      "tweet_count": 43419,
+      "listed_count": 11,
+      "like_count": 27727,
+      "media_count": 6468
+    },
+    "name": "tracey",
+    "created_at": "2014-07-03T00:48:24.000Z",
+    "description": "",
+    "id": "2665918523",
+    "verified_type": "none",
+    "username": "Mattsmineyo"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1530896,
+      "following_count": 8839,
+      "tweet_count": 1047857,
+      "listed_count": 444,
+      "like_count": 869,
+      "media_count": 223178
+    },
+    "name": "Ma3Route",
+    "created_at": "2012-05-20T04:59:45.000Z",
+    "description": "A mobile, web and SMS platform that helps users to share and access info about transport and current traffic conditions for their city. #BeatInconvenience",
+    "id": "585372692",
+    "verified_type": "blue",
+    "username": "Ma3Route"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 23406,
+      "following_count": 409,
+      "tweet_count": 10742,
+      "listed_count": 149,
+      "like_count": 21560,
+      "media_count": 657
+    },
+    "name": "Slayer",
+    "created_at": "2015-03-03T03:11:04.000Z",
+    "description": "Occasional weekend streamer",
+    "id": "3066919649",
+    "verified_type": "none",
+    "username": "sc_Slayerage"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 3388,
+      "following_count": 1882,
+      "tweet_count": 296117,
+      "listed_count": 37,
+      "like_count": 156396,
+      "media_count": 15828
+    },
+    "name": "mnhskin.com",
+    "created_at": "2009-10-04T15:12:38.000Z",
+    "description": "FAMU \ud83d\udc0d Alumna. I wish everyone the day/life that they deserve. \ud83e\udde1 Follow @milknhoneyllc",
+    "id": "79751091",
+    "verified_type": "none",
+    "username": "Itsonlyreal"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 940637,
+      "following_count": 8201,
+      "tweet_count": 34250,
+      "listed_count": 11030,
+      "like_count": 9144,
+      "media_count": 9828
+    },
+    "name": "The Nature Conservancy",
+    "created_at": "2008-11-24T17:48:05.000Z",
+    "description": "Our mission is to conserve the lands and waters on which all life depends. Working in 81 countries and territories, all 50 U.S. states and your backyard.",
+    "id": "17596622",
+    "verified_type": "blue",
+    "username": "nature_org"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1523092,
+      "following_count": 2049,
+      "tweet_count": 23043,
+      "listed_count": 4927,
+      "like_count": 2308,
+      "media_count": 4809
+    },
+    "name": "Sen. Marsha Blackburn",
+    "created_at": "2011-04-06T18:05:33.000Z",
+    "description": "I am honored to serve the people of Tennessee.",
+    "id": "278145569",
+    "verified_type": "government",
+    "username": "MarshaBlackburn"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 473,
+      "following_count": 752,
+      "tweet_count": 30385,
+      "listed_count": 9,
+      "like_count": 142913,
+      "media_count": 3536
+    },
+    "name": "I\u2019d like a supersize of Death,with a Coke\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\udde6",
+    "created_at": "2009-08-20T22:18:17.000Z",
+    "description": "Nothing to see here. Move along.",
+    "id": "67442119",
+    "verified_type": "none",
+    "username": "plbodine"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 8735601,
+      "following_count": 1359,
+      "tweet_count": 49542,
+      "listed_count": 13793,
+      "like_count": 9576,
+      "media_count": 2130
+    },
+    "name": "Gary Lineker",
+    "created_at": "2012-01-22T18:07:24.000Z",
+    "description": "Once kicked a ball about. Now talk about kicking a ball about. The Rest Is Football @restisfootball @Goalhangerpods ..Instagram . Retweets are not endorsements",
+    "id": "471287735",
+    "verified_type": "blue",
+    "username": "GaryLineker"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 95533,
+      "following_count": 11,
+      "tweet_count": 2034,
+      "listed_count": 705,
+      "like_count": 1763,
+      "media_count": 1979
+    },
+    "name": "Nature Is Weird",
+    "created_at": "2014-10-02T14:21:22.000Z",
+    "description": "Tweeting the strangest plants, fungi, animals & geological formations nature has to offer!",
+    "id": "2800121770",
+    "verified_type": "none",
+    "username": "NaturelsWeird"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 14047,
+      "following_count": 786,
+      "tweet_count": 95,
+      "listed_count": 37,
+      "like_count": 6174,
+      "media_count": 5
+    },
+    "name": "Luke & Ryan Hart",
+    "created_at": "2018-06-16T09:10:17.000Z",
+    "description": "https://t.co/Tk1OFC195G Authors. Keynote speakers. @WhiteRibbon_UK Ambassadors.@RefugeCharity Champions.",
+    "id": "1007913241685757952",
+    "verified_type": "none",
+    "username": "CoCoAwareness"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 24891,
+      "following_count": 31529,
+      "tweet_count": 13449,
+      "listed_count": 91,
+      "like_count": 40816,
+      "media_count": 1470
+    },
+    "name": "Girls' Motivation",
+    "created_at": "2013-05-16T18:09:18.000Z",
+    "description": "Fitness Motivation for all girls. Guys are welcome to follow for motivation as well! #FitFam #Quotes Facebook: http://t.co/sPARS7IeU4",
+    "id": "1433702077",
+    "verified_type": "none",
+    "username": "GirIsMotivation"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 0,
+      "following_count": 3,
+      "tweet_count": 0,
+      "listed_count": 0,
+      "like_count": 2,
+      "media_count": 0
+    },
+    "name": "David Phill Mulholland",
+    "created_at": "2022-02-14T13:55:14.000Z",
+    "description": "",
+    "id": "1493221436063952899",
+    "verified_type": "none",
+    "username": "Daveymul"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 53836,
+      "following_count": 49354,
+      "tweet_count": 258248,
+      "listed_count": 13,
+      "like_count": 117458,
+      "media_count": 6280
+    },
+    "name": "John Peterson",
+    "created_at": "2011-02-16T18:38:26.000Z",
+    "description": "God bless America. Let no one tear us apart.  Constitutionalist. IFBAP.  FB by Dr. G Loudon, Gen Flynn, Charles Kirk, Matt Couch, Ryan Fournier. NO DMS plz!",
+    "id": "253182943",
+    "verified_type": "blue",
+    "username": "sailinjackvip"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 1021380,
+      "following_count": 5,
+      "tweet_count": 125,
+      "listed_count": 1247,
+      "like_count": 12,
+      "media_count": 96
+    },
+    "name": "Jon Voight",
+    "created_at": "2016-07-29T17:39:49.000Z",
+    "description": "Academy Award winning actor",
+    "id": "759081003168112640",
+    "verified_type": "blue",
+    "username": "jonvoight"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 137521,
+      "following_count": 102669,
+      "tweet_count": 15022,
+      "listed_count": 810,
+      "like_count": 459052,
+      "media_count": 3486
+    },
+    "name": "Oliver McGee PhD MBA",
+    "created_at": "2010-10-15T05:20:45.000Z",
+    "description": "FMR Sr Advisor @WhiteHouse, FMR US Dep Asst Secretary\ud83c\uddfa\ud83c\uddf8#MAGA|Guest @SkyNews @BBCWorld @LBC\ud83c\uddec\ud83c\udde7|@FoxNews|@MSNBC|@CNN|@CGTNOfficial\ud83c\udde8\ud83c\uddf3|BookMe ogmcgee@yahoo.com",
+    "id": "202952121",
+    "verified_type": "blue",
+    "username": "OliverMcGee"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 34345,
+      "following_count": 37,
+      "tweet_count": 7515,
+      "listed_count": 106,
+      "like_count": 3303,
+      "media_count": 1311
+    },
+    "name": "ShankhNaad",
+    "created_at": "2012-04-01T10:11:58.000Z",
+    "description": "Politically Incorrect | Supreme | Patriarchy Forever",
+    "id": "542428403",
+    "verified_type": "none",
+    "username": "ShankhNaad"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 3327908,
+      "following_count": 938,
+      "tweet_count": 81097,
+      "listed_count": 7941,
+      "like_count": 39652,
+      "media_count": 20786
+    },
+    "name": "Prime Video",
+    "created_at": "2008-11-06T22:14:23.000Z",
+    "description": "Running for office, and their lives. Heads of State is now streaming.",
+    "id": "17220817",
+    "verified_type": "business",
+    "username": "PrimeVideo"
+  },
+  {
+    "public_metrics": {
+      "followers_count": 86999,
+      "following_count": 5102,
+      "tweet_count": 107020,
+      "listed_count": 113,
+      "like_count": 18334,
+      "media_count": 6964
+    },
+    "name": "Mwarim\u016b M\u016btemi wa K\u012bama",
+    "created_at": "2009-03-09T16:31:49.000Z",
+    "description": "Co-Chair @AfricansRising. Revolutionary & Community Organizer, High Priest & Chief Evangelist \u2014 UTU \u2014 at Mzalendo Halisi Foundation @UtuNaUzalendoKE",
+    "id": "23455576",
+    "verified_type": "blue",
+    "username": "MutemiWaKiama"
+  }
+]

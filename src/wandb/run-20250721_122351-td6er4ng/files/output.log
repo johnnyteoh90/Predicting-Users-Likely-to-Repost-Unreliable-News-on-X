@@ -1,0 +1,25 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [07:41<00:00, 10.03s/it]C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py:2159: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(best_model_path, map_location="cpu")                                                                      
+{'eval_loss': 0.7177864909172058, 'eval_precision': 0.2692307692307692, 'eval_recall': 0.5, 'eval_f1': 0.35, 'eval_runtime': 3.9422, 'eval_samples_per_second': 3.298, 'eval_steps_per_second': 0.507, 'epoch': 1.0}
+{'eval_loss': 0.6955969333648682, 'eval_precision': 0.5227272727272727, 'eval_recall': 0.5119047619047619, 'eval_f1': 0.4583333333333333, 'eval_runtime': 4.6137, 'eval_samples_per_second': 2.818, 'eval_steps_per_second': 0.433, 'epoch': 2.0}
+{'eval_loss': 0.6801061630249023, 'eval_precision': 0.7916666666666667, 'eval_recall': 0.5833333333333334, 'eval_f1': 0.5112781954887218, 'eval_runtime': 4.5206, 'eval_samples_per_second': 2.876, 'eval_steps_per_second': 0.442, 'epoch': 3.0}
+{'eval_loss': 0.6879822611808777, 'eval_precision': 0.41666666666666663, 'eval_recall': 0.44047619047619047, 'eval_f1': 0.40522875816993464, 'eval_runtime': 6.0057, 'eval_samples_per_second': 2.165, 'eval_steps_per_second': 0.333, 'epoch': 4.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [07:44<00:00,  9.67s/it]
+{'train_runtime': 466.4342, 'train_samples_per_second': 0.798, 'train_steps_per_second': 0.103, 'train_loss': 0.6419150034586588, 'epoch': 4.0}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:08<00:00,  2.08s/it]
+
+=== Test Results ===
+Precision: 0.4727, Recall: 0.4833, F1: 0.4420
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.40      0.17      0.24        12
+           1       0.55      0.80      0.65        15
+
+    accuracy                           0.52        27
+   macro avg       0.47      0.48      0.44        27
+weighted avg       0.48      0.52      0.46        27
+
+Confusion Matrix:
+ [[ 2 10]
+ [ 3 12]]

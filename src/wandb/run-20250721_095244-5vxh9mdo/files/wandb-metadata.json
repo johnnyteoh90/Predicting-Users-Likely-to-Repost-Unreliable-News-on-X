@@ -1,0 +1,28 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.10.11",
+  "startedAt": "2025-07-21T08:52:44.889121Z",
+  "program": "C:\\Users\\peter\\Desktop\\MSc-Research-Project\\src\\bertv2.py",
+  "codePath": "src\\bertv2.py",
+  "codePathLocal": "bertv2.py",
+  "git": {
+    "remote": "https://github.com/johnnyteoh90/MSc-Research-Project.git",
+    "commit": "1b7b058de2e4458a224b9d83a4783c390399fb73"
+  },
+  "email": "johnnyteoh8888@gmail.com",
+  "root": "C:\\Users\\peter\\Desktop\\MSc-Research-Project\\src",
+  "host": "Johnnygains",
+  "executable": "C:\\Users\\peter\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\python.exe",
+  "cpu_count": 16,
+  "cpu_count_logical": 22,
+  "disk": {
+    "/": {
+      "total": "1022020096000",
+      "used": "932392501248"
+    }
+  },
+  "memory": {
+    "total": "33685757952"
+  },
+  "writerId": "pbgwlj6hj6btyipbmfspzrtcr327qc0g"
+}

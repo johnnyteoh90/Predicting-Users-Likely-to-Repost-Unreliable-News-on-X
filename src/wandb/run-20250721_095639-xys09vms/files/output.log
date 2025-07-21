@@ -1,0 +1,29 @@
+ 25%|███████████████████████▊                                                                       | 12/48 [01:24<03:48,  6.35s/it]Trainer is attempting to log a value of "None" of type <class 'NoneType'> for key "eval/_" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+ 50%|███████████████████████████████████████████████▌                                               | 24/48 [03:05<02:58,  7.44s/it]Trainer is attempting to log a value of "None" of type <class 'NoneType'> for key "eval/_" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+ 75%|███████████████████████████████████████████████████████████████████████▎                       | 36/48 [04:51<01:31,  7.63s/it]Trainer is attempting to log a value of "None" of type <class 'NoneType'> for key "eval/_" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 0.7338944673538208, 'eval_precision': 0.25, 'eval_recall': 0.42857142857142855, 'eval_f1': 0.3157894736842105, 'eval__': None, 'eval_runtime': 3.6903, 'eval_samples_per_second': 3.523, 'eval_steps_per_second': 0.542, 'epoch': 1.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [06:35<00:00,  7.53s/it]Trainer is attempting to log a value of "None" of type <class 'NoneType'> for key "eval/_" as a scalar. This invocation of Tensorboard's writer.add_scalar() is incorrect so we dropped this attribute.
+{'eval_loss': 0.6971592307090759, 'eval_precision': 0.41666666666666663, 'eval_recall': 0.44047619047619047, 'eval_f1': 0.40522875816993464, 'eval__': None, 'eval_runtime': 4.419, 'eval_samples_per_second': 2.942, 'eval_steps_per_second': 0.453, 'epoch': 2.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [06:40<00:00,  7.53s/it]C:\Users\peter\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\trainer.py:2159: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+{'eval_loss': 0.6933059096336365, 'eval_precision': 0.7916666666666667, 'eval_recall': 0.5833333333333334, 'eval_f1': 0.5112781954887218, 'eval__': None, 'eval_runtime': 4.2849, 'eval_samples_per_second': 3.034, 'eval_steps_per_second': 0.467, 'epoch': 3.0}
+  state_dict = torch.load(best_model_path, map_location="cpu")                                                                      
+{'eval_loss': 0.7001082301139832, 'eval_precision': 0.5227272727272727, 'eval_recall': 0.5119047619047619, 'eval_f1': 0.4583333333333333, 'eval__': None, 'eval_runtime': 4.3683, 'eval_samples_per_second': 2.976, 'eval_steps_per_second': 0.458, 'epoch': 4.0}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 48/48 [06:41<00:00,  8.37s/it]
+{'train_runtime': 403.2921, 'train_samples_per_second': 0.922, 'train_steps_per_second': 0.119, 'train_loss': 0.6390623251597086, 'epoch': 4.0}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:06<00:00,  1.66s/it]
+
+=== Test Results ===
+Precision, Recall, F1, _ : (0.4727272727272727, 0.48333333333333334, 0.4419713831478538, None)
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.40      0.17      0.24        12
+           1       0.55      0.80      0.65        15
+
+    accuracy                           0.52        27
+   macro avg       0.47      0.48      0.44        27
+weighted avg       0.48      0.52      0.46        27
+
+Confusion Matrix:
+ [[ 2 10]
+ [ 3 12]]
