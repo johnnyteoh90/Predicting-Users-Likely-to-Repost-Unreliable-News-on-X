@@ -1,0 +1,4 @@
+fold,svd_k,block,delta_F1
+4,0,no_bow,0.0
+4,0,no_topics,0.0
+4,0,no_msg_numeric,0.12142399684112704

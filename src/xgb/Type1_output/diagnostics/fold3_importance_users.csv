@@ -1,0 +1,10 @@
+feature,gain
+U_AccountAge_days,1.0903592109680176
+posting_frequency,1.0578864812850952
+following_count,0.9920840263366699
+retweet_count,0.6711551547050476
+HU_TweetPercent_Retweet,0.6703900098800659
+HU_AverageInterval_days,0.6409188508987427
+U_FolloweeNumDay,0.6299649477005005
+retweet_ratio,0.6294868588447571
+followers_count,0.5810092091560364

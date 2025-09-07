@@ -1,0 +1,15 @@
+{
+  "CSV_PATH": "preprocessed_dataset_all2.csv",
+  "HIERARCHICAL": false,
+  "MAX_SEQ_LEN": 512,
+  "MAX_CHUNKS": 12,
+  "OVERLAP_TOKENS": 0,
+  "TRAIN_BATCH_SIZE": 8,
+  "EVAL_BATCH_SIZE": 8,
+  "NUM_EPOCHS": 4,
+  "LEARNING_RATE": 2e-05,
+  "WARMUP_RATIO": 0.1,
+  "D_USER_LATENT": 16,
+  "BERT_MODEL_NAME": "bert-base-uncased",
+  "SEED": 555
+}

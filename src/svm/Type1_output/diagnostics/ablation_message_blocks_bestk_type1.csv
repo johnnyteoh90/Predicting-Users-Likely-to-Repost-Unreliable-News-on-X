@@ -1,0 +1,16 @@
+fold,svd_k,block,delta_F1
+1,0,no_bow,-0.028905191108701545
+1,0,no_topics,-0.028905191108701545
+1,0,no_msg_numeric,0.03175657359718076
+2,0,no_bow,0.0
+2,0,no_topics,0.0
+2,0,no_msg_numeric,-0.08306739699928556
+3,0,no_bow,0.0
+3,0,no_topics,0.0
+3,0,no_msg_numeric,-0.1261083743842365
+4,0,no_bow,0.0
+4,0,no_topics,0.0
+4,0,no_msg_numeric,0.12142399684112704
+5,0,no_bow,0.0
+5,0,no_topics,0.0
+5,0,no_msg_numeric,0.06625928761635103
