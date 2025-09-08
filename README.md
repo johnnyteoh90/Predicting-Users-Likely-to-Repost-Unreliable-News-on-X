@@ -2,21 +2,10 @@
 
 This repository accompanies the study on *Predicting Users Likely to Repost Unreliable News on X (Formerly Twitter)*. It provides end-to-end pipelines to (a) collect user timelines, (b) construct two datasets—**Type‑1** (posts up to each user’s first news repost; early‑detection) and **Type‑2** (full tweet history excluding retweets), (c) extract rich features from timelines and profiles (e.g., bag‑of‑words, topics, psycholinguistic metrics; account age, activity, network reach), and (d) train/evaluate both classical ML (SVM, LR, XGBoost) and neural baselines (MLP, BiGru, Bert), including multimodal fusion of user + text signals. We compare three feature families—**User‑only**, **Message‑only (text)**, and **Fusion (Message + Users)**, across early vs. full‑history settings. For the experiments, user‑centric features are highly predictive, and an RBF‑SVM attains ~63–65% Macro‑F1 on balanced Type‑2 data, exceeding deep baselines. All commands assume Python ≥ 3.9 in a virtual environment; unless noted, results are reported as macro Precision/Recall/F1 under 5‑fold stratified cross‑validation.
 
-## Assets: Embeddings & Cluster Map
 
-**`glove.twitter.27B.200d.txt` — Pre‑trained Twitter word embeddings (200‑dimensional).**  
-A plain‑text matrix where each line is `token` followed by **200 floating‑point values** (the embedding). These vectors were trained on ~2B tweets (≈27B tokens; ~1.2M vocabulary) and are uncased. Typical rows look like:
+## `project_directory_tree_diagram.txt` — what this file is for
 
-**`glove-200.txt` — Token→cluster map (topics) derived from GloVe‑Twitter‑200d.**  
-A compact look‑up table that assigns each token to a **discrete cluster ID** (topic/bin) produced by clustering the 200‑d GloVe vectors (e.g., k‑means). Each line is:
-- The **last field is an integer cluster ID**; scripts validate this and infer `n_clusters = max(cluster_id) + 1`.  
-- The **middle float** is an auxiliary weight (e.g., frequency/score) and is **ignored** by most scripts; the mapping is driven by the final integer.
-
-**Why both files exist.**
-- The **embedding file** gives *dense, continuous* semantics for neural models and for producing interpretable clusters.  
-- The **cluster map** turns those continuous vectors into *stable, discrete* features (“topics”) that work well with linear/SVM/XGB baselines.
-
----
+This file is a **snapshot of the repository’s directory structure** at the time of submission. Please note that the results file of the respective models are stored in their own subfolders. 
 
 ## `crawler.py`
 
@@ -321,6 +310,16 @@ This section documents the role of each CSV in the pipeline and clarifies the tw
 - **Type‑2 (Full‑history).** Use each user’s available timeline **up to a fixed collection date**, but **exclude all retweets and direct reposts** from feature computation to avoid label leakage. Thus, Type‑2 encodes a fuller view of **original language and activity**, independent of quoted/forwarded content.
 
 ---
+
+## Assets: Embeddings & Cluster Map
+
+**`glove.twitter.27B.200d.txt` — Pre‑trained Twitter word embeddings (200‑dimensional).**  
+A plain‑text matrix where each line is `token` followed by **200 floating‑point values** (the embedding). These vectors were trained on ~2B tweets (≈27B tokens; ~1.2M vocabulary) and are uncased. Typical rows look like:
+
+**`glove-200.txt` — Token→cluster map (topics) derived from GloVe‑Twitter‑200d.**  
+A compact look‑up table that assigns each token to a **discrete cluster ID** (topic/bin) produced by clustering the 200‑d GloVe vectors (e.g., k‑means). Each line is:
+- The **last field is an integer cluster ID**; scripts validate this and infer `n_clusters = max(cluster_id) + 1`.  
+- The **middle float** is an auxiliary weight (e.g., frequency/score) and is **ignored** by most scripts; the mapping is driven by the final integer.
 
 ### File‑by‑File Overviewc (Please note that data files with UserID and Usernames will be masked for privacy consideration)
 
