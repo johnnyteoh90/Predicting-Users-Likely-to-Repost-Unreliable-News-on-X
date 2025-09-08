@@ -1,17 +1,20 @@
 # README
 
-This repository contains end-to-end scripts for (a) collecting Twitter/X data, (b) deriving per-user behavioral + profile features, and (c) training/evaluating multiple classifiers across three **feature families**: **Users only**, **Message only (text)**, and **Fusion (Message + Users)**. All commands below assume **Python ≥ 3.9** and a working virtual environment. Results are reported as **macro** Precision/Recall/F1 over **5-fold stratified CV** unless noted.
+This repository accompanies the study on *Predicting Users Likely to Repost Unreliable News on X (Formerly Twitter)*. It provides end-to-end pipelines to (a) collect user timelines, (b) construct two datasets—**Type‑1** (posts up to each user’s first news repost; early‑detection) and **Type‑2** (full tweet history excluding retweets), (c) extract rich features from timelines and profiles (e.g., bag‑of‑words, topics, psycholinguistic metrics; account age, activity, network reach), and (d) train/evaluate both classical ML (SVM, LR, XGBoost) and neural baselines (MLP, BiGru, Bert), including multimodal fusion of user + text signals. We compare three feature families—**User‑only**, **Message‑only (text)**, and **Fusion (Message + Users)**, across early vs. full‑history settings. For the experiments, user‑centric features are highly predictive, and an RBF‑SVM attains ~63–65% Macro‑F1 on balanced Type‑2 data, exceeding deep baselines. All commands assume Python ≥ 3.9 in a virtual environment; unless noted, results are reported as macro Precision/Recall/F1 under 5‑fold stratified cross‑validation.
 
-> ### Data columns used throughout
-> Most training scripts expect a CSV with at least:  
-> `username`, `label` (`reliable` / `unreliable`), `aggr_text` (concatenated text), plus user features such as:  
-> `U_AccountAge_days`, `total_posts`, `followers_count`, `following_count`, `verified`, `posting_frequency`, `retweet_count`, `follower_to_followee_ratio`, `retweet_ratio`, `HU_TweetNum`, `HU_TweetPercent_Original`, `HU_TweetPercent_Retweet`, `HU_AverageInterval_days`, `U_ListedNum`, `U_ProfileUrl`, `U_FollowerNumDay`, `U_FolloweeNumDay`, `U_TweetNumDay`, `U_ListedNumDay`.  
-> Labels are mapped to ints as `reliable → 0` and `unreliable → 1` inside the scripts.
+## Assets: Embeddings & Cluster Map
 
-> ### Cluster map (token → cluster id) for topic features / interpretability
-> Several models require a **cluster map** file (e.g., `glove-200.txt`) where each line is formatted like:  
-> `token ... <int_cluster_id>`  
-> The code validates that the **last token is an integer** and computes the number of clusters as `max(cid)+1`. The same expectation is used in the LR/SVM pipelines.
+**`glove.twitter.27B.200d.txt` — Pre‑trained Twitter word embeddings (200‑dimensional).**  
+A plain‑text matrix where each line is `token` followed by **200 floating‑point values** (the embedding). These vectors were trained on ~2B tweets (≈27B tokens; ~1.2M vocabulary) and are uncased. Typical rows look like:
+
+**`glove-200.txt` — Token→cluster map (topics) derived from GloVe‑Twitter‑200d.**  
+A compact look‑up table that assigns each token to a **discrete cluster ID** (topic/bin) produced by clustering the 200‑d GloVe vectors (e.g., k‑means). Each line is:
+- The **last field is an integer cluster ID**; scripts validate this and infer `n_clusters = max(cluster_id) + 1`.  
+- The **middle float** is an auxiliary weight (e.g., frequency/score) and is **ignored** by most scripts; the mapping is driven by the final integer.
+
+**Why both files exist.**
+- The **embedding file** gives *dense, continuous* semantics for neural models and for producing interpretable clusters.  
+- The **cluster map** turns those continuous vectors into *stable, discrete* features (“topics”) that work well with linear/SVM/XGB baselines.
 
 ---
 
@@ -398,16 +401,3 @@ This section documents the role of each CSV in the pipeline and clarifies the tw
 > **Note.** All training/evaluation scripts assume consistent label mapping (e.g., `reliable → 0`, `unreliable → 1`) and expect the model‑ready datasets to expose the required columns (e.g., `username`, `label`, `aggr_text`, plus user features).
 
 
-## Assets: Embeddings & Cluster Map
-
-**`glove.twitter.27B.200d.txt` — Pre‑trained Twitter word embeddings (200‑dimensional).**  
-A plain‑text matrix where each line is `token` followed by **200 floating‑point values** (the embedding). These vectors were trained on ~2B tweets (≈27B tokens; ~1.2M vocabulary) and are uncased. Typical rows look like:
-
-**`glove-200.txt` — Token→cluster map (topics) derived from GloVe‑Twitter‑200d.**  
-A compact look‑up table that assigns each token to a **discrete cluster ID** (topic/bin) produced by clustering the 200‑d GloVe vectors (e.g., k‑means). Each line is:
-- The **last field is an integer cluster ID**; scripts validate this and infer `n_clusters = max(cluster_id) + 1`.  
-- The **middle float** is an auxiliary weight (e.g., frequency/score) and is **ignored** by most scripts; the mapping is driven by the final integer.
-
-**Why both files exist.**
-- The **embedding file** gives you *dense, continuous* semantics for neural models and for producing interpretable clusters.  
-- The **cluster map** turns those continuous vectors into *stable, discrete* features (“topics”) that work well with linear/SVM/XGB baselines.
