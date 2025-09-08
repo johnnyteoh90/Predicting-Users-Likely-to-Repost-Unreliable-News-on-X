@@ -3,9 +3,9 @@
 This repository accompanies the study on *Predicting Users Likely to Repost Unreliable News on X (Formerly Twitter)*. It provides end-to-end pipelines to (a) collect user timelines, (b) construct two datasets—**Type‑1** (posts up to each user’s first news repost; early‑detection) and **Type‑2** (full tweet history excluding retweets), (c) extract rich features from timelines and profiles (e.g., bag‑of‑words, topics, psycholinguistic metrics; account age, activity, network reach), and (d) train/evaluate both classical ML (SVM, LR, XGBoost) and neural baselines (MLP, BiGru, Bert), including multimodal fusion of user + text signals. We compare three feature families—**User‑only**, **Message‑only (text)**, and **Fusion (Message + Users)**, across early vs. full‑history settings. For the experiments, user‑centric features are highly predictive, and an RBF‑SVM attains ~63–65% Macro‑F1 on balanced Type‑2 data, exceeding deep baselines. All commands assume Python ≥ 3.9 in a virtual environment; unless noted, results are reported as macro Precision/Recall/F1 under 5‑fold stratified cross‑validation.
 
 
-## `project_directory_tree_diagram.txt` — what this file is for
+## `project_directory_tree_diagram.txt` 
 
-This file is a **snapshot of the repository’s directory structure** at the time of submission. Please note that the results file of the respective models are stored in their own subfolders. 
+**Purpose.** This file is a **snapshot of the repository’s directory structure** at the time of submission. Please note that the result files of the respective models are stored in their own subfolders. 
 
 ## `crawler.py`
 
