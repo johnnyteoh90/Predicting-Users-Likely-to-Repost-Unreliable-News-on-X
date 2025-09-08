@@ -348,3 +348,30 @@ A compact look‑up table that assigns each token to a **discrete cluster ID** (
   **Model‑ready, per‑user** table derived from the Type‑2 window. Includes **aggregated text**, **user‑centric features**, and **LIWC features**, analogous to the Type‑1 counterpart but using the full‑history window.
 ---
 
+
+### requirements.txt
+### Installing Dependencies
+
+This project uses a `requirements.txt` file to manage Python package dependencies.
+
+1. **Create and activate a virtual environment (recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On macOS/Linux
+   venv\Scripts\activate      # On Windo
+
+2. pip install -r requirements.txt
+
+
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+scikit-learn>=1.2
+xgboost>=1.7
+tweepy>=4.14
+requests>=2.31
+nltk>=3.8
+torch>=2.0
+transformers>=4.40
+matplotlib>=3.7
+joblib>=1.2
