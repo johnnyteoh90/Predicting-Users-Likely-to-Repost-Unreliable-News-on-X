@@ -322,7 +322,7 @@ This section documents the role of each CSV in the pipeline and clarifies the tw
 
 ---
 
-### File‑by‑File Overview
+### File‑by‑File Overviewc (Please note that data files with UserID and Usernames will be masked for privacy consideration)
 
 - **`raw_data.csv`**  
   Source list from Mu & Aletras’ research repository. Contains a cleaned roster of existing X (formerly Twitter) users and the **classification label** of each user. Use this as the **seed/user‑label reference** for downstream collection and processing.
