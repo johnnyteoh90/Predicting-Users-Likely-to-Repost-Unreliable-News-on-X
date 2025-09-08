@@ -37,7 +37,7 @@ OUTPUT_ROOT = "runs"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 SEED = 555
 
-# ---- MODEL / TRAINING SETTINGS ----
+# ---- Tbert MODEL / TRAINING SETTINGS ----
 BERT_MODEL_NAME = "bert-base-uncased"
 MAX_SEQ_LEN = 512            # tokens per sequence
 MAX_CHUNKS = 12              # cap for H-BERT memory
@@ -50,7 +50,7 @@ WARMUP_RATIO = 0.1
 D_USER_LATENT = 16
 NUM_LABELS = 2
 
-# # ---- MODEL / TRAINING SETTINGS ----
+# # ---- Hbert MODEL / TRAINING SETTINGS ----
 # BERT_MODEL_NAME = "bert-base-uncased"
 # MAX_SEQ_LEN = 512            # tokens per sequence
 # MAX_CHUNKS = 4              # cap for H-BERT memory

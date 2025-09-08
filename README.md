@@ -266,9 +266,15 @@ python mlp.py --model bert \
 
 > This script is **constant‑driven** (no CLI args). Edit the block at the top of `fusion.py` and run it. Key switches include:
 >
-> - `CSV_PATH` (default: `preprocessed_dataset_all2.csv`)
-> - `OUTPUT_ROOT` (default: `runs`)
-> - `HIERARCHICAL=False` (set `True` for H‑BERT)  
+> This script is **config-by-constants** (no CLI flags). Open `fusion.py` and edit the config block near the top:
+>
+> - `CSV_PATH` – path to your aggregated user dataset (default: `preprocessed_dataset_all2.csv`).  
+>   Required columns include `username`, `label`, `aggr_text`, and the 19 user-feature columns (see source).
+> - `HIERARCHICAL` – **`False` = T-BERT** (flat 512-token input); **`True` = H-BERT** (chunk long text, average chunk [CLS] vectors).
+> - `BERT_MODEL_NAME` – HF model id (default: `bert-base-uncased`). To use BERTweet, set to `vinai/bertweet-base`.
+> - `MAX_SEQ_LEN`, `MAX_CHUNKS`, `OVERLAP_TOKENS` – control token length (512), number of chunks, and stride for H-BERT.
+> - `TRAIN_BATCH_SIZE`, `EVAL_BATCH_SIZE`, `NUM_EPOCHS`, `LEARNING_RATE`, etc. – training hyperparameters.
+
 
 ```bash
 # (1) T‑BERT + Users MLP (late fusion)
@@ -321,7 +327,7 @@ A compact look‑up table that assigns each token to a **discrete cluster ID** (
 - The **last field is an integer cluster ID**; scripts validate this and infer `n_clusters = max(cluster_id) + 1`.  
 - The **middle float** is an auxiliary weight (e.g., frequency/score) and is **ignored** by most scripts; the mapping is driven by the final integer.
 
-### File‑by‑File Overviewc (Please note that data files with UserID and Usernames will be masked for privacy consideration)
+### File‑by‑File Overview (Please note that data files with UserID and Usernames will be masked for privacy consideration)
 
 - **`raw_data.csv`**  
   Source list from Mu & Aletras’ research repository. Contains a cleaned roster of existing X (formerly Twitter) users and the **classification label** of each user. Use this as the **seed/user‑label reference** for downstream collection and processing.
