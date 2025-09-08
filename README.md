@@ -43,9 +43,6 @@ python crawler.py
 - `final_output.csv` — long format; one row per tweet with per-tweet text, timestamps, basic engagement fields, and (per-user) the label from the seed CSV.  
   Use this as input to `derive_hu_features.py` after light cleaning.
 
-**Notes on stability.** Batch mode + paginated timelines; saves after each batch and sleeps on rate-limit. If stopped, it resumes from the last saved temp file.
-
----
 
 ## `derive_hu_features.py`
 
@@ -80,24 +77,6 @@ python derive_hu_features.py \
 - Over last-N tweets: counts/proportions of originals, retweets, quotes, replies; fraction interactive (= (retweets+quotes+replies)/N); mean inter-tweet interval (days); average `retweet_count`, `quote_count`, `reply_count` (optionally only over originals).
 - Profile features: account age (days); profile URL flag; followers/followees/tweets/listed per-day rates; plus raw follower/followee/tweet counts.
 
-**API vs CSV fallback.** Fetches profile metrics via Bearer token; if unavailable, falls back to estimating profile features from CSV columns (if present).
-
-**Output schema (columns).**
-`user,
- HU_R_TweetNum, HU_R_TweetPercent_Original, HU_R_TweetPercent_Retweet,
- HU_R_TweetPercent_Quote, HU_R_TweetPercent_Reply, HU_R_RetweetPercent,
- HU_R_QuotePercent, HU_R_ReplyPercent, HU_R_InteractivePer, HU_R_AverageInterval_days,
- HU_R_RetweetedRate, HU_R_QuotedRate, HU_R_RepliedRate,
- U_R_AccountAge_days, U_R_ListedNum, U_R_ProfileUrl,
- U_R_FollowerNumDay, U_R_FolloweeNumDay, U_R_TweetNumDay, U_R_ListedNumDay,
- followers_count, following_count, tweet_count, username, id`
-
-**Expected console line.**
-```
-[OK] Window size = <N>. Users = <num_users>. API used: <True|False>
-```
-
----
 
 ## `lr.py` — Logistic Regression (Users / Message / Fusion)
 
@@ -128,15 +107,6 @@ python lr.py \
   `ablation_users_lofo.csv` (Users), `ablation_message_blocks.csv` (drop `no_bow`, `no_topics`, `no_msg_numeric`)
 - Config snapshot → `lr_feature_config.json` (captures user columns, text grid, etc.)
 - Models + vectorizers (per fold) under `outdir/models/` (e.g., `foldX_lr_*.joblib`, TF-IDF artifacts)
-
-**Console output (indicative).**
-```
-=== 5-fold Stratified CV (macro, Logistic Regression) ===
-family   P_macro_mean P_macro_std ... F1_macro_mean F1_macro_std
-...
-```
-
----
 
 ## `svm.py` — SVM (RBF) with LSA grid, permutations, and ablations
 
@@ -171,14 +141,6 @@ Requires label, `aggr_text`, and the standard user columns (script validates pre
   - `importance_topics_perm_agg.csv` (topic permutation agg)
   - `svd_dev_sweep.csv` (Macro-F1 vs k) and `m_f1_selected_vs_k0.csv` (comparative sweep; prints Wilcoxon test if available)
 
-**Console output (indicative).**
-```
-=== 5-fold Stratified CV (macro, SVM-RBF) ===
-...
-```
-
----
-
 ## `xgb.py` — XGBoost (trees) over Users / Message / Fusion
 
 **Purpose.** 5-fold CV using XGBClassifier, tuned on a small-sample-friendly grid, supporting Users/Message/Fusion families; includes message block ablations and exports feature importances aggregated across folds (by gain).
@@ -205,13 +167,6 @@ python xgb.py \
 - Ablations (Message): `no_bow`, `no_topics`, `no_msg_numeric` deltas per fold (diagnostics CSVs)
 - Models + vectorizers saved per fold under `outdir/models/` as joblib artifacts (see code for filenames)
 
-**Console output (indicative).**
-```
-=== 5-fold Stratified CV (macro, XGBoost) ===
-family   P_macro_mean ... F1_macro_mean ...
-```
-
----
 
 ## `bigru.py` — BiGRU(+Attention) text encoder; MLP for users; late fusion
 
@@ -234,22 +189,12 @@ python bigru.py
 - Fusion: `runs/fusion_fold{K}/...` similarly
 - Summaries: `runs/{mode_tag}_cv_summary.csv` for all arms and `runs/{mode_tag}_settings.json` (mode tag encodes T- vs H- settings)
 
-**Console output (indicative).**
-```
-===== 5-fold CV Summary (Macro metrics) =====
-[TEXT]
-Precision: <mean> ± <std>
-...
-```
 
----
-
-## `bert.py` — T-BERT / H-BERT (text-only or Fusion) + Users MLP (optional)
+## `bert.py` — T-BERT / H-BERT (text-only) + Users MLP
 
 **Purpose.** A JSON-driven pipeline to run either:
 1. MLP on user features only, or
 2. BERT (text-only): T-BERT (flat) or H-BERT (hierarchical chunking), or
-3. Fusion (BERT + Users),  
 with feature importance for users (permutation, LOFO), token-cluster saliency/occlusion for message interpretability (requires cluster map), and stability aggregation across folds.
 
 **CLI.**
@@ -265,14 +210,6 @@ python bert.py --model bert \
   --bert_settings tbert_settings.json \
   --cluster glove-200.txt \
   --outdir runs_nn
-
-# (C) H-BERT + Users fusion
-python bert.py --model bert --fusion \
-  --data preprocessed_dataset_all2.csv \
-  --bert_settings hbert_settings.json \
-  --cluster glove-200.txt \
-  --outdir runs_nn
-```
 
 Required checks. Data columns + label mapping validated at startup. For BERT modes, transformers must be installed and a cluster map provided to enable interpretability exports.
 
@@ -303,16 +240,8 @@ Required checks. Data columns + label mapping validated at startup. For BERT mod
 - BERT interpretability (text): aggregated saliency → `diagnostics/bert_saliency_agg.csv`; occlusion drops per cluster → `diagnostics/bert_occlusion_agg.csv`
 - Fusion (BERT+Users): `diagnostics/fusion_user_perm_agg.csv` via permutation over user features
 
-**Console output (indicative).**
-```
-=== 5-fold CV Summary (BERT) ===
-family  n_folds  P            R            F1
-...
-```
 
----
-
-## `mlp.py` — MLP (Users only) and (optionally) BERT modes too
+## `mlp.py` — MLP (Users only) 
 
 **Purpose.** Contains both the Users-only MLP pipeline and the same BERT pipeline as `bert.py`. Use it like `bert.py` with `--model mlp` or `--model bert`. Required columns, label mapping, outputs, and diagnostics behave the same as documented in the `bert.py` section above.
 
@@ -337,6 +266,30 @@ python mlp.py --model bert \
 - CV summaries: `cv/results_per_fold.csv`, `cv/metrics_summary.csv`, `cv/metrics_summary_formatted.csv`
 
 ---
+
+## `fusion.py` — Fusion (T‑BERT/H‑BERT + Users MLP)
+
+**Purpose.** Trains and evaluates three arms under 5‑fold stratified CV: **Text‑only** (BERT), **User‑only** (MLP), and **Fusion** (**BERT + MLP Users** - FOCUS). The fusion arm concatenates the BERT pooled text representation with a learned user‑feature embedding and feeds the result to a classifier, reporting **macro Precision/Recall/F1** per fold and in a cross‑arm summary. T‑BERT (flat, 512 tokens) is the default; set `HIERARCHICAL=True` to run H‑BERT (chunk then average across chunks). Per‑fold models, scalers, metrics, and predictions are saved under `runs/`. :contentReference[oaicite:0]{index=0}
+
+---
+
+### Usage (edit‑and‑run)
+
+> This script is **constant‑driven** (no CLI args). Edit the block at the top of `fusion.py` and run it. Key switches include:
+>
+> - `CSV_PATH` (default: `preprocessed_dataset_all2.csv`)
+> - `OUTPUT_ROOT` (default: `runs`)
+> - `HIERARCHICAL=False` (set `True` for H‑BERT)  
+
+```bash
+# (1) T‑BERT + Users MLP (late fusion)
+#    Edit HIERARCHICAL=False and CSV_PATH at the top of fusion.py
+python fusion.py
+
+# (2) H‑BERT + Users MLP (late fusion over chunks)
+#    Edit HIERARCHICAL=True and CSV_PATH at the top of fusion.py
+python fusion.py
+
 
 ## Installation & Environment
 
@@ -388,16 +341,5 @@ This section documents the role of each CSV in the pipeline and clarifies the tw
 
 - **`preprocessed_dataset_all2.csv` (Type‑2)**  
   **Model‑ready, per‑user** table derived from the Type‑2 window. Includes **aggregated text**, **user‑centric features**, and **LIWC features**, analogous to the Type‑1 counterpart but using the full‑history window.
-
 ---
-
-### Broad Overview for Data Files
-
-`raw_data.csv` (seed users & labels)  
-→ **collect** → `master_raw_data.csv` (API‑crawled union)  
-→ **filter by timeline rule** → `cleaned_data_filtered_newssource.csv` (Type‑1) **and** `Cleaned_data_set2.csv` (Type‑2)  
-→ **aggregate & featurize** → `preprocessed_dataset_all.csv` (Type‑1) **and** `preprocessed_dataset_all2.csv` (Type‑2)
-
-> **Note.** All training/evaluation scripts assume consistent label mapping (e.g., `reliable → 0`, `unreliable → 1`) and expect the model‑ready datasets to expose the required columns (e.g., `username`, `label`, `aggr_text`, plus user features).
-
 

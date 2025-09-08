@@ -120,7 +120,7 @@ def build_message_blocks(df_sub, ngram_range, min_df, cmap, nclus):
         max_features=20000,
         min_df=min_df,
         max_df=0.4,
-        lowercase=False,  # we already lowercase in preprocess
+        lowercase=False,  
     )
     X_bow = vect.fit_transform(texts.values)
     topics = compute_topic_feats(texts.values, token_count.values, cmap, nclus)

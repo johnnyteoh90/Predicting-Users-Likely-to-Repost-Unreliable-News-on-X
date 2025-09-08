@@ -8,11 +8,11 @@ from datetime import datetime, timezone
 # ----------------------
 # 1. Authentication
 # ----------------------
-API_KEY            = "PeEYtuAaTwiCVZsdNeSHEKWgp"
-API_SECRET_KEY     = "FExG9RIxPa5ybYFR8qrJwsC4i4yQq7QTii5ArZYpPVLw7L4nfZ"
-BEARER_TOKEN       = "AAAAAAAAAAAAAAAAAAAAAO863AEAAAAAVdZk82RYhSY3n2CPWIX5LRxbMbk%3D11tcl7gR9jfSOZDFDUa0B1J89z21nkVUqbjkftnDKtxTVyf5lE"
-ACCESS_TOKEN       = "1944709126032166912-ctFBl4Q2WGo034LJ6PNpBaxQ8vcZt"
-ACCESS_TOKEN_SECRET= "0tiiVK7JJCYbZtkjkohkq13Fx4N5T4CLC3wmF85ZQXTHy"
+API_KEY            = ""
+API_SECRET_KEY     = ""
+BEARER_TOKEN       = ""
+ACCESS_TOKEN       = ""
+ACCESS_TOKEN_SECRET= ""
 
 client = tweepy.Client(
     bearer_token=BEARER_TOKEN,
